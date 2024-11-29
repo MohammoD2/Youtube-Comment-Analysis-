@@ -4,9 +4,15 @@ import json
 import mlflow
 import logging
 import os
+import dagshub
 
-# Set up MLflow tracking URI
-mlflow.set_tracking_uri("http://ec2-54-196-109-131.compute-1.amazonaws.com:5000/")
+# Step 1: Initialize DagsHub with MLflow
+repo_owner = "MohammoD2"  # Your DagsHub username
+repo_name = "Youtube-Comment-Analysis-"  # Your DagsHub repository name
+mlflow_tracking_uri = f"https://dagshub.com/{repo_owner}/{repo_name}.mlflow"
+
+dagshub.init(repo_owner=repo_owner, repo_name=repo_name, mlflow=True)
+mlflow.set_tracking_uri(mlflow_tracking_uri)
 
 
 # logging configuration
