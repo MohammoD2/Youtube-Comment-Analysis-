@@ -19,7 +19,7 @@ from mlflow.tracking import MlflowClient
 import matplotlib.dates as mdates
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "chrome-extension://mimldeaikdahppdmflkpabckichkmbgi"}})
 
 # Define the preprocessing function
 def preprocess_comment(comment):
@@ -110,7 +110,7 @@ def predict():
     return jsonify(response)
 
 
-@app.route('/predict_with_timestamps', methods=['POST'])
+@app.route('/predict/predict_with_timestamps', methods=['POST'])
 def predict_with_timestamps():
     data = request.json
     comments_data = data.get('comments')
