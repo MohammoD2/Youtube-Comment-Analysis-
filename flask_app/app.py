@@ -19,7 +19,9 @@ from mlflow.tracking import MlflowClient
 import matplotlib.dates as mdates
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "chrome-extension://mimldeaikdahppdmflkpabckichkmbgi"}})
+CORS(app)
+
+
 
 # Define the preprocessing function
 def preprocess_comment(comment):
@@ -146,7 +148,7 @@ def predict_with_timestamps():
     return jsonify(response)
 
 
-@app.route('/generate_chart', methods=['POST'])
+@app.route('/predict/generate_chart', methods=['POST'])
 def generate_chart():
     try:
         data = request.get_json()
@@ -191,7 +193,7 @@ def generate_chart():
         app.logger.error(f"Error in /generate_chart: {e}")
         return jsonify({"error": f"Chart generation failed: {str(e)}"}), 500
 
-@app.route('/generate_wordcloud', methods=['POST'])
+@app.route('/predict/generate_wordcloud', methods=['POST'])
 def generate_wordcloud():
     try:
         data = request.get_json()
@@ -227,7 +229,7 @@ def generate_wordcloud():
         app.logger.error(f"Error in /generate_wordcloud: {e}")
         return jsonify({"error": f"Word cloud generation failed: {str(e)}"}), 500
 
-@app.route('/generate_trend_graph', methods=['POST'])
+@app.route('/predict/generate_trend_graph', methods=['POST'])
 def generate_trend_graph():
     try:
         data = request.get_json()
