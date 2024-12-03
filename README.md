@@ -22,8 +22,10 @@ Download the backend repository to your local machine. Open your terminal or com
 ```bash
 git clone https://github.com/YourUsername/yt-chrome-plugin.git
 cd yt-chrome-plugin
+### 2. Install Backend Dependencies
 
+Use the following command to install the required Python packages:
 
---------
+```bash
+pip install -r requirements.txt
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
