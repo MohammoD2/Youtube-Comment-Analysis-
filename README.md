@@ -23,27 +23,27 @@ Download the backend repository to your local machine. Open your terminal or com
 git clone https://github.com/YourUsername/yt-chrome-plugin.git
 cd yt-chrome-plugin
 ```
-###2. Install Backend Dependencies
+### 2. Install Backend Dependencies
 Use the following command to install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
-###3. Run the Flask App
+### 3. Run the Flask App
 Navigate to the project folder and start the Flask application:
 ```bash
 python app.py
 ```
-###4. Clone the Frontend Repository
+### 4. Clone the Frontend Repository
 Download the frontend repository for the Chrome extension:
 ```bash
 git clone https://github.com/MohammoD2/yt-chrome-plugin-frontend.git
 ```
-###5. Update the API Key
+### 5. Update the API Key
 Locate the appropriate JavaScript file in the frontend repository (e.g,popup.js). Replace the placeholder API key with your Google API YouTube Key:
 ```bash
 const API_KEY = 'YOUR_GOOGLE_API_KEY';
 ```
-##Get a YouTube API Key
+## Get a YouTube API Key
 1. Go to [Google Cloud Console](https://console.cloud.google.com/) and log in.
 2. Create a new project:
    - Click **Project** dropdown > **New Project** > Name it > **Create**.
