@@ -22,6 +22,13 @@ Download the backend repository to your local machine. Open your terminal or com
 ```bash
 git clone https://github.com/YourUsername/yt-chrome-plugin.git
 cd yt-chrome-plugin
+```
+### 1. Clone the Backend Repository
+Download the backend repository to your local machine. Open your terminal or command prompt and run:
+```bash
+git clone https://github.com/YourUsername/yt-chrome-plugin.git
+cd yt-chrome-plugin
+
 
 
 
