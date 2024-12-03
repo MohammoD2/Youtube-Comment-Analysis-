@@ -3,9 +3,6 @@ Youtube Comment Analysis v1
 
 YouTube Comment Analysis involves extracting, processing, and analyzing comments from YouTube videos to uncover insights. This analysis can provide valuable information about audience sentiment, engagement trends, and the effectiveness of content strategies.YouTube Comment Analysis involves extracting, processing, and analyzing comments from YouTube videos to uncover insights. This analysis can provide valuable information about audience sentiment, engagement trends, and the effectiveness of content strategies.
 
-# YT Chrome Plugin Repository
-
-This repository contains the necessary files and instructions to set up a Flask backend and a custom Chrome extension for YouTube. Follow the steps below to install and run the project.
 
 ## Requirements
 - Python 3.x
